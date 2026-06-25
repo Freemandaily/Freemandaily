@@ -1,7 +1,7 @@
 # Hi, I'm Freeman 👋
 ### Blockchain Data Engineer 
 
-I build **production-grade data pipelines for on-chain data** — from raw EVM logs to analyst-ready marts. My work sits at the intersection of data engineering and DeFi: decoding ABI events at scale, modeling protocol behavior with dbt, and building forensic tools that make blockchain data legible.
+I build **production-grade data pipelines for on-chain data**  from raw EVM logs to analyst-ready marts. My work sits at the intersection of data engineering and DeFi: decoding ABI events at scale, modeling protocol behavior  and building forensic tools that make blockchain data legible.
 
 I write about the architectures I build → **[Substack](https://freemandaily.substack.com)** · **[Twitter / X](https://x.com/freemandayly)**
 
@@ -9,19 +9,18 @@ I write about the architectures I build → **[Substack](https://freemandaily.su
 
 ## 🛠 Core Stack
 
-**Ingestion & Processing** — PySpark · Apache Airflow · Kestra · Envio HyperIndex  
-**Storage & Warehousing** — GCS · S3 · BigQuery · DuckDB · PostgreSQL · TimescaleDB  
-**Transformation** — dbt (BigQuery · DuckDB · Athena adapters) · Medallion Architecture  
-**Cloud** — AWS (EMR · Athena · Glue · S3) · GCP (Dataproc · BigQuery · GCS) · Terraform  
-**Blockchain** — ethereum-etl · ABI Decoding · ERC-20 · EVM Log Parsing · Dune Analytics  
-**APIs & Frontend** — FastAPI · React · HTML5 Canvas · Docker  
+**Ingestion & Processing** : PySpark · Apache Airflow · Kestra · Envio HyperIndex  
+**Storage & Warehousing** : GCS · S3 · BigQuery · DuckDB · PostgreSQL · TimescaleDB  
+**Transformation** : dbt (BigQuery · DuckDB · Athena adapters) · Medallion Architecture  
+**Cloud**: AWS (EMR · Athena · Glue · S3) · GCP (Dataproc · BigQuery · GCS) · Terraform 
+**APIs & Frontend** : FastAPI · React · HTML5 Canvas · Docker  
 
 ---
 
 ## 🔭 Featured Projects
 
 ### [Ethereum DeFi Observatory](https://github.com/Freemandaily/ethereum-defi-observatory)
-**End-to-end crash analysis pipeline **
+**End-to-end crash analysis pipeline**
 
 > *$19 billion liquidated. 1.6 million traders wiped out. What did the Ethereum blockchain look like from the inside?*
 
@@ -34,9 +33,7 @@ Full GCP pipeline analyzing the October 10, 2025 crypto crash using raw on-chain
 ### [Blockchain Data Decoder](https://github.com/Freemandaily/Blockchain-data-decoder)
 **Multi-protocol EVM log decoder **
 
-High-performance PySpark batch pipeline that reads raw Ethereum event logs from the AWS public blockchain dataset and decodes them into structured DeFi event tables. Covers **Aave V1/V2/V3**, **Compound V1/V2/V3**, and **Morpho V1** — deposit, withdraw, borrow, repay, and liquidation events — through a unified, protocol-agnostic decoder architecture. Deployable locally or on AWS EMR.
-
-Key design: a broadcast-friendly Spark filter collapses multi-protocol topic0/address lookups into a single early-stage filter, eliminating shuffles before the decoding UDF runs.
+High-performance PySpark batch pipeline that reads raw Ethereum event logs from the AWS public blockchain dataset and decodes them into structured DeFi event tables. Covers **Aave V1/V2/V3**, **Compound V1/V2/V3**, and **Morpho V1**  deposit, withdraw, borrow, repay, and liquidation events  through a unified, protocol-agnostic decoder architecture. Deployable locally or on AWS EMR.
 
 ---
 
@@ -59,7 +56,7 @@ Arkham-style forensic platform tracing the Kelp DAO exploit fund flow. PySpark b
 ### [Token Intelligence](https://github.com/Freemandaily/Token-Intelligence)
 **Serverless analytics platform **
 
-Demonstrates a local-first / serverless analytics stack with zero infrastructure overhead. Data stored as Parquet, queried directly by DuckDB's vectorized engine, transformed by dbt-duckdb, and served via FastAPI — with the entire database bundled as a single `.duckdb` file in a Docker container.
+Demonstrates a local-first / serverless analytics stack with zero infrastructure overhead. Data stored as Parquet, queried directly by DuckDB's vectorized engine, transformed by dbt-duckdb, and served via FastAPI  with the entire database bundled as a single `.duckdb` file in a Docker container.
 
 ---
 
@@ -72,15 +69,15 @@ Side-by-side implementation of ETL and ELT architectures for processing Ethereum
 
 ## ✍️ Writing
 
-I write deep technical articles on blockchain data engineering — architecture breakdowns, protocol decoding, and pipeline design.
+I write deep technical articles on blockchain data engineering architecture breakdowns, protocol decoding, and pipeline design.
 
-- **[ETL Pipeline for Blockchain Data Engineering](https://substack.com/@freemandaily/note/p-203373935?r=95bp6&utm_source=notes-share-action&utm_medium=web)** — How to architect an end-to-end blockchain ETL pipeline: source definition with SQD, four-stage PySpark transformation (clean → enrich → extract → materialize), DuckDB loading with idempotent upserts, and Airflow orchestration with a watermark-based DAG.
+- **[ETL Pipeline for Blockchain Data Engineering](https://substack.com/@freemandaily/note/p-203373935?r=95bp6&utm_source=notes-share-action&utm_medium=web)**  How to architect an end-to-end blockchain ETL pipeline: source definition with SQD, four-stage PySpark transformation (clean → enrich → extract → materialize), DuckDB loading with idempotent upserts, and Airflow orchestration with a watermark-based DAG.
 
-- **[Decoding Blockchain Data: Money Market Protocols](https://substack.com/@freemandaily/note/p-199692691?r=95bp6&utm_source=notes-share-action&utm_medium=web)** — A step-by-step walkthrough of how raw EVM event logs become structured lending data. Covers ABI anatomy, topic0 derivation, indexed vs non-indexed field decoding with `eth_abi`, Spark UDF design, and uint256 normalization. Using Aave V2 Borrow events as the worked example.
+- **[Decoding Blockchain Data: Money Market Protocols](https://substack.com/@freemandaily/note/p-199692691?r=95bp6&utm_source=notes-share-action&utm_medium=web)**  A step-by-step walkthrough of how raw EVM event logs become structured lending data. Covers ABI anatomy, topic0 derivation, indexed vs non-indexed field decoding with `eth_abi`, Spark UDF design, and uint256 normalization. Using Aave V2 Borrow events as the worked example.
 
-- **[Factory Contract Interaction](https://substack.com/@freemandaily/note/p-181307873?r=95bp6&utm_source=notes-share-action&utm_medium=web)** — Practical guide to interacting with the Uniswap V2 Factory Contract using Web3.py. Covers view vs write functions, pool creation, and how to decode the `PairCreated` event from a transaction receipt — including topic0 computation and data field slicing.
+- **[Factory Contract Interaction](https://substack.com/@freemandaily/note/p-181307873?r=95bp6&utm_source=notes-share-action&utm_medium=web)**  Practical guide to interacting with the Uniswap V2 Factory Contract using Web3.py. Covers view vs write functions, pool creation, and how to decode the `PairCreated` event from a transaction receipt  including topic0 computation and data field slicing.
 
-- **[Journey Into On-Chain Data Decoding and Automation](https://substack.com/@freemandaily/note/p-180308366?r=95bp6&utm_source=notes-share-action&utm_medium=web)** — An introduction to DeFi data analysis: why blockchain transparency is deeper than what explorers show, how AMMs and factory contracts work, and what makes on-chain data valuable for engineering and analytics.
+- **[Journey Into On-Chain Data Decoding and Automation](https://substack.com/@freemandaily/note/p-180308366?r=95bp6&utm_source=notes-share-action&utm_medium=web)**  An introduction to DeFi data analysis: why blockchain transparency is deeper than what explorers show, how AMMs and factory contracts work, and what makes on-chain data valuable for engineering and analytics.
 
 → **[Read all articles on Substack](https://substack.com/@freemandaily)**
 
