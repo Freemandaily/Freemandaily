@@ -31,14 +31,14 @@ Full GCP pipeline analyzing the October 10, 2025 crypto crash using raw on-chain
 ---
 
 ### [Blockchain Data Decoder](https://github.com/Freemandaily/Blockchain-data-decoder)
-**Multi-protocol EVM log decoder **
+**Multi-protocol EVM log decoder**
 
 High-performance PySpark batch pipeline that reads raw Ethereum event logs from the AWS public blockchain dataset and decodes them into structured DeFi event tables. Covers **Aave V1/V2/V3**, **Compound V1/V2/V3**, and **Morpho V1**  deposit, withdraw, borrow, repay, and liquidation events  through a unified, protocol-agnostic decoder architecture. Deployable locally or on AWS EMR.
 
 ---
 
 ### [TradesLens](https://github.com/Freemandaily/TradesLens)
-**Multi-chain DEX terminal **
+**Multi-chain DEX terminal**
 
 Real-time swap intelligence platform indexing **Uniswap V3**, **SushiSwap V3**, and **Solidly V3** across Ethereum Mainnet, Arbitrum, and Optimism. Envio HyperIndex handles multi-chain event ingestion; dbt models normalize heterogeneous protocol schemas into a unified `fct_dex_swaps` fact table via Medallion architecture; FastAPI serves analytical queries on top of TimescaleDB.
 
@@ -47,14 +47,14 @@ Real-time swap intelligence platform indexing **Uniswap V3**, **SushiSwap V3**, 
 ---
 
 ### [ChainTrace Forensic](https://github.com/Freemandaily/ChainTrace-Forensic)
-**On-chain forensics tool **
+**On-chain forensics tool**
 
 Arkham-style forensic platform tracing the Kelp DAO exploit fund flow. PySpark batch pipeline joins ETH transfer events with transaction calls to identify Thorchain laundering routes. A graph transformation layer classifies wallets (Attacker / Hop / Exit) and outputs a topology JSON consumed by an interactive React + Canvas frontend with time-travel simulation.
 
 ---
 
 ### [Token Intelligence](https://github.com/Freemandaily/Token-Intelligence)
-**Serverless analytics platform **
+**Serverless analytics platform**
 
 Demonstrates a local-first / serverless analytics stack with zero infrastructure overhead. Data stored as Parquet, queried directly by DuckDB's vectorized engine, transformed by dbt-duckdb, and served via FastAPI  with the entire database bundled as a single `.duckdb` file in a Docker container.
 
