@@ -19,6 +19,13 @@ I write about the architectures I build → **[Substack](https://freemandaily.su
 
 ## 🔭 Featured Projects
 
+### [Cross-Chain Fund & Bridge Analytics Pipeline](https://github.com/Freemandaily/cross-chain-flow)
+**Multi-protocol bridge reconciliation pipeline**
+
+A dbt + BigQuery pipeline that reconciles cross-chain token deposits and fulfillments into a single, normalized transaction ledger. Reads raw event logs directly from Google's public blockchain datasets across Ethereum, Arbitrum, Optimism, Avalanche, and Polygon, then correlates deposit and fill events for **Across V3, deBridge DLN, Stargate V2, Mayan Swift, and Wormhole** through a protocol-agnostic Medallion architecture (base → protocol → unified → enriched). Tracks per-transaction settlement latency (`time_to_fill_seconds`) and live `PENDING`/`COMPLETED` order status, with token metadata enrichment via the DefiLlama API and daily orchestration through Apache Airflow.
+
+---
+
 ### [Ethereum DeFi Observatory](https://github.com/Freemandaily/ethereum-defi-observatory)
 **End-to-end crash analysis pipeline**
 
