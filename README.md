@@ -1,9 +1,9 @@
 # Hi, I'm Freeman 👋
-### Blockchain Data Engineer 
+### Data Engineer 
 
-I build **production-grade data pipelines for blockchain data**  from raw EVM logs to analyst-ready dataset. My work sits at the intersection of data engineering and DeFi: decoding ABI events at scale, modeling protocol behavior  and building forensic tools that make blockchain data legible.
+I build production-grade data pipelines for high-volume event data, from raw, unstructured logs to analyst-ready datasets. My work sits at the intersection of data engineering and financial systems: decoding and parsing complex event schemas at scale, modeling transaction behavior, and building analytical tools that make messy data legible and trustworthy.
 
-I write about the architectures I build → **[Substack](https://freemandaily.substack.com)** · **[Twitter / X](https://x.com/freemandayly)**
+I write about the architectures I build → **[Substack](https://freemandaily.substack.com)** · **[Twitter / X](https://x.com/freemandayly)** · **[LinkedIn](https://www.linkedin.com/in/onah-innocent-69ba32112/)**
 
 ---
 
