@@ -12,7 +12,7 @@ I write about the architectures I build → **[Substack](https://freemandaily.su
 **Ingestion & Processing** : PySpark · Apache Airflow · Kestra · Envio HyperIndex  
 **Storage & Warehousing** : GCS · S3 · BigQuery · DuckDB · PostgreSQL · TimescaleDB · lakehouse (Apache Iceberg) <br/>
 **Transformation** : dbt (BigQuery · DuckDB · Athena adapters) · Medallion Architecture  
-**Cloud**: AWS (EMR · Athena · Glue · S3) · GCP (Dataproc · BigQuery · GCS) · Terraform 
+**Cloud**: AWS (EMR · Athena · Glue · S3) · GCP (Dataproc · BigQuery · GCS) · Terraform  <br/>
 **APIs & Frontend** : FastAPI · React · HTML5 Canvas · Docker  
 
 ---
